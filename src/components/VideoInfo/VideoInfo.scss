@@ -1,0 +1,61 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/global";
+
+.videoInfo {
+  @include tablet {
+    margin: 1.5rem;
+  }
+  &__title {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px $mercury solid;
+    color: $brainflix-black;
+
+    @include tablet {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__author {
+    color: $brainflix-black;
+    font-size: 1rem;
+  }
+
+  &__specifics {
+    display: flex;
+    gap: 30%;
+    margin: 1rem;
+    border-bottom: 2px $mercury solid;
+
+    & p {
+      color: $silver;
+    }
+
+    @include tablet {
+      gap: 0;
+      justify-content: space-between;
+    }
+
+    @include tablet {
+      &-static {
+        display: flex;
+        gap: 2.5rem;
+      }
+
+      &-dynamic {
+        display: flex;
+        gap: 2.5rem;
+      }
+    }
+  }
+
+  &__item {
+    padding-bottom: 1em;
+  }
+
+  &__description {
+    margin: 1rem;
+  }
+}
