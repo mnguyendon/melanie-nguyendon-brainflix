@@ -102,6 +102,16 @@
 
     &-image {
       background-color: $brainflix-blue;
+      position: relative;
+      right: 30%;
+
+      @include tablet {
+        right: 20%;
+      }
+
+      @include desktop {
+        right: 32%;
+      }
     }
 
     &-container {
