@@ -51,11 +51,24 @@
     }
   }
 
+  &__container {
+    display: flex;
+    position: relative;
+  }
+
+  &__image {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 120%;
+  }
+
   &__item {
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
   }
 
   &__description {
+    color: $brainflix-darkblack;
     margin: 1rem;
   }
 }

@@ -1,4 +1,6 @@
 import "./VideoInfo.scss";
+import viewsIcon from "../../assets/icons/views.svg";
+import likesIcon from "../../assets/icons/likes.svg";
 
 function VideoInfo() {
   return (
@@ -10,8 +12,22 @@ function VideoInfo() {
           <p className="videoInfo__date videoInfo__item">07/11/2021</p>
         </div>
         <div className="videoInfo__specifics-dynamic">
-          <p className="videoInfo__views videoInfo__item">views</p>
-          <p className="videoInfo__likes videoInfo__item">likes</p>
+          <div className="videoInfo__container">
+            <img
+              className="videoInfo__image"
+              src={viewsIcon}
+              alt="views icon"
+            />
+            <p className="videoInfo__views videoInfo__item">views</p>
+          </div>
+          <div className="videoInfo__container">
+            <img
+              className="videoInfo__image"
+              src={likesIcon}
+              alt="likes icon"
+            />
+            <p className="videoInfo__likes videoInfo__item">likes</p>
+          </div>
         </div>
       </div>
       <p className="videoInfo__description">
