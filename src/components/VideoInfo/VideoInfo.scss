@@ -5,6 +5,7 @@
 .videoInfo {
   @include tablet {
     margin: 1.5rem;
+    margin-right: 0;
   }
   &__title {
     margin: 1rem;
@@ -36,6 +37,8 @@
     @include tablet {
       gap: 0;
       justify-content: space-between;
+      margin-right: 0;
+      padding-right: 1rem;
     }
 
     @include tablet {
