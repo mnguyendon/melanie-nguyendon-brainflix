@@ -13,16 +13,15 @@ function WriteComment({ currentVideo }) {
         <img className="writeComment__avatar" src={commentsAvatar} />
         <div className="writeComment__new">
           <form className="writeComment__form">
-            <label className="writeComment__container-label" for="userComment">
+            <label className="writeComment__container-label">
               JOIN THE CONVERSATION
             </label>
             <div className="writeComment__container">
               <textarea
                 className="writeComment__container-textarea"
-                name="userComment"
-                id="userComment"
+                name="writeComment"
+                id="writeComment"
                 placeholder="Add a new comment"
-                autocomplete="#"
                 required
               ></textarea>
               <button className="writeComment__button" type="submit">

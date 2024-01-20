@@ -35,7 +35,7 @@
   &__title {
     padding-top: 1rem;
     font-size: 1rem;
-    border-top: 2px $mercury solid;
+    border-top: 1px $mercury solid;
 
     @include tablet {
       border-top: none;
@@ -48,6 +48,7 @@
     height: 4.5rem;
     min-width: 8rem;
     border-radius: 0.5rem;
+    object-fit: cover;
   }
 
   &__info {
