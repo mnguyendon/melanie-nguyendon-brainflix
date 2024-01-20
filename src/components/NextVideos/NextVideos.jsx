@@ -32,15 +32,3 @@ const NextVideos = ({ currentVideo, alterVideo }) => {
 };
 
 export default NextVideos;
-
-// <ul>
-//   {videoInfoData.map((video) => {
-//     return (
-//       video.id !== currentVideo.id && (
-//         <li key={video.id} onClick={() => alterVideo(video)}>
-//           <p>{video.title}</p>
-//         </li>
-//       )
-//     );
-//   })}
-// </ul>
