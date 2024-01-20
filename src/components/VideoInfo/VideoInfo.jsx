@@ -1,6 +1,7 @@
 import "./VideoInfo.scss";
 import viewsIcon from "../../assets/icons/views.svg";
 import likesIcon from "../../assets/icons/likes.svg";
+import { useState } from "react";
 
 function VideoInfo() {
   return (
