@@ -3,10 +3,12 @@ import commentsAvatar from "../../assets/images/Mohan-muruge.jpg";
 import commentImg from "../../assets/icons/add_comment.svg";
 import { useState } from "react";
 
-function WriteComment() {
+function WriteComment({ currentVideo }) {
   return (
     <section className="writeComment">
-      <h2 className="writeComment__title">3 Comments</h2>
+      <h2 className="writeComment__title">
+        {currentVideo.comments.length} Comments
+      </h2>
       <div className="writeComment__wrapper">
         <img className="writeComment__avatar" src={commentsAvatar} />
         <div className="writeComment__new">

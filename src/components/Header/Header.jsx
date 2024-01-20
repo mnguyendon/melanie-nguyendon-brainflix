@@ -8,7 +8,7 @@ function Header() {
     <header className="header">
       <nav className="header__navigation">
         <div className="header__logo">
-          <a href="#" class="header__link">
+          <a href="#" className="header__link">
             <img className="header__logo-img" alt="brainflix logo" src={logo} />
           </a>
         </div>
@@ -23,7 +23,7 @@ function Header() {
           <img src={avatarImage} className="header__avatar" />
         </div>
         <div className="header__button-container">
-          <button type="submit" class="header__button">
+          <button type="submit" className="header__button">
             <img className="header__button-image" src={uploadImg}></img>
             UPLOAD
           </button>
