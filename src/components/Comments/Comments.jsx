@@ -1,4 +1,5 @@
 import "./Comments.scss";
+import { formatTimestamp } from "../../utils/utils";
 import { useState } from "react";
 import videoInfoData from "../../data/video-details.json";
 
@@ -11,7 +12,9 @@ function Comments({ currentVideo }) {
           <div className="comments__details">
             <div className="comments__info">
               <p className="comments__name">{comment.name}</p>
-              <p className="comments__date">{comment.timestamp}</p>
+              <p className="comments__date">
+                {formatTimestamp(comment.timestamp)}
+              </p>
             </div>
             <p className="comments__comment">{comment.comment}</p>
           </div>

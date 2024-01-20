@@ -1,8 +1,7 @@
 import "./VideoInfo.scss";
-import videoInfo from "../../data/video-details.json";
 import viewsIcon from "../../assets/icons/views.svg";
 import likesIcon from "../../assets/icons/likes.svg";
-import { useState } from "react";
+import { formatTimestamp } from "../../utils/utils";
 
 function VideoInfo({ currentVideo }) {
   return (
@@ -14,7 +13,7 @@ function VideoInfo({ currentVideo }) {
             {currentVideo.channel}
           </h2>
           <p className="videoInfo__date videoInfo__item">
-            {currentVideo.timestamp}
+            {formatTimestamp(currentVideo.timestamp)}
           </p>
         </div>
         <div className="videoInfo__specifics-dynamic">
