@@ -1,0 +1,111 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/global";
+
+.writeComment {
+  @include tablet {
+    margin-left: 1rem;
+  }
+
+  &__title {
+    padding: 1rem;
+    font-size: 1rem;
+    color: $brainflix-black;
+  }
+
+  &__avatar {
+    position: relative;
+    top: 3%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__new {
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    &-label {
+      padding-bottom: 0.5rem;
+      font-size: 0.75rem;
+      color: $silver;
+      font-weight: bold;
+    }
+
+    &-textarea {
+      padding: 0.5rem;
+      height: 6rem;
+      margin-bottom: 1rem;
+      border-radius: 0.25rem;
+      border: 2px $mercury solid;
+      background-color: $alabaster;
+
+      @include tablet {
+        height: auto;
+        width: 75%;
+      }
+    }
+
+    textarea:focus {
+      outline: none;
+      border: 1.5px $brainflix-blue solid;
+    }
+
+    textarea::placeholder {
+      color: $brainflix-darkblack;
+    }
+
+    &-name {
+      height: 2.25rem;
+
+      @include tablet {
+        height: 3rem;
+      }
+    }
+  }
+
+  &__button {
+    background-color: $brainflix-blue;
+    position: relative;
+    color: $white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $brainflix-darkblue;
+      color: $white;
+    }
+
+    @include tablet {
+      margin: 0 1rem;
+      margin-bottom: 1rem;
+      width: 25%;
+    }
+  }
+}
+
+.writeCommentImg {
+  background-color: $brainflix-blue;
+  position: absolute;
+  right: 80%;
+}

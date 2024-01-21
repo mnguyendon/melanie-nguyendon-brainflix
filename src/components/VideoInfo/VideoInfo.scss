@@ -1,0 +1,84 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/global";
+
+.videoInfo {
+  @include tablet {
+    margin: 1.5rem;
+    margin-right: 0;
+  }
+  &__title {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px $mercury solid;
+    color: $brainflix-black;
+
+    @include tablet {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__author {
+    color: $brainflix-black;
+    font-size: 1rem;
+  }
+
+  &__specifics {
+    display: flex;
+    gap: 30%;
+    margin: 1rem;
+    border-bottom: 1px $mercury solid;
+
+    & p {
+      color: $silver;
+    }
+
+    @include tablet {
+      gap: 0;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      padding-right: 1rem;
+      margin-right: 0;
+    }
+
+    @include tablet {
+      &-static {
+        display: flex;
+        gap: 2.5rem;
+      }
+
+      &-dynamic {
+        display: flex;
+        gap: 2.5rem;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    position: relative;
+  }
+
+  &__image {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 120%;
+  }
+
+  &__item {
+    padding-bottom: 1rem;
+  }
+
+  &__description {
+    color: $brainflix-darkblack;
+    margin: 1rem;
+
+    @include tablet {
+      padding-top: 1rem;
+    }
+  }
+}
