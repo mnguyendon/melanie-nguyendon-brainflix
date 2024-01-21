@@ -37,8 +37,11 @@
     @include tablet {
       gap: 0;
       justify-content: space-between;
-      margin-right: 0;
+    }
+
+    @include desktop {
       padding-right: 1rem;
+      margin-right: 0;
     }
 
     @include tablet {
@@ -73,5 +76,9 @@
   &__description {
     color: $brainflix-darkblack;
     margin: 1rem;
+
+    @include tablet {
+      padding-top: 1rem;
+    }
   }
 }

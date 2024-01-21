@@ -3,6 +3,10 @@
 @use "../../styles/partials/global";
 
 .writeComment {
+  @include tablet {
+    margin-left: 1rem;
+  }
+
   &__title {
     padding: 1rem;
     font-size: 1rem;
@@ -47,6 +51,7 @@
       padding: 0.5rem;
       height: 6rem;
       margin-bottom: 1rem;
+      border-radius: 0.25rem;
       border: 2px $mercury solid;
       background-color: $alabaster;
 
@@ -58,7 +63,7 @@
 
     textarea:focus {
       outline: none;
-      border: 1.5px $brainflix-black solid;
+      border: 1.5px $brainflix-blue solid;
     }
 
     textarea::placeholder {
@@ -71,12 +76,6 @@
       @include tablet {
         height: 3rem;
       }
-    }
-
-    &-input {
-      background-color: $alabaster;
-      border: 0.15rem $mercury solid;
-      border-radius: 0.25rem;
     }
   }
 
@@ -98,7 +97,8 @@
     }
 
     @include tablet {
-      margin-left: 1rem;
+      margin: 0 1rem;
+      margin-bottom: 1rem;
       width: 25%;
     }
   }

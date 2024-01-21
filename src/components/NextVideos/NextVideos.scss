@@ -6,9 +6,16 @@
   margin: 1rem;
   min-width: 33%;
 
+  @include tablet {
+    border-top: 1px $mercury solid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   @include desktop {
     margin-left: 0;
     margin-top: 0;
+    margin-right: 0;
     padding-left: 1rem;
     border-left: 1px $mercury solid;
   }
@@ -36,8 +43,11 @@
     padding-top: 1rem;
     font-size: 1rem;
     border-top: 1px $mercury solid;
+    color: $silver;
 
     @include tablet {
+      padding-bottom: 1rem;
+      padding-top: 2rem;
       border-top: none;
     }
   }
@@ -64,5 +74,6 @@
     flex-wrap: wrap;
     font-size: 0.95rem;
     min-width: 5rem;
+    color: $brainflix-black;
   }
 }
