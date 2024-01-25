@@ -81,6 +81,10 @@
 
   &__button {
     background-color: $brainflix-blue;
+    background-image: URL("../../assets/icons/add_comment.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 5%;
     position: relative;
     color: $white;
     font-weight: bold;
@@ -102,10 +106,4 @@
       width: 25%;
     }
   }
-}
-
-.writeCommentImg {
-  background-color: $brainflix-blue;
-  position: absolute;
-  right: 80%;
 }

@@ -1,6 +1,5 @@
 import "./WriteComment.scss";
 import commentsAvatar from "../../assets/images/Mohan-muruge.jpg";
-import commentImg from "../../assets/icons/add_comment.svg";
 import { useState } from "react";
 
 function WriteComment({ currentVideo }) {
@@ -25,7 +24,6 @@ function WriteComment({ currentVideo }) {
                 required
               ></textarea>
               <button className="writeComment__button" type="submit">
-                <img className="writeCommentImg" src={commentImg} />
                 COMMENT
               </button>
             </div>

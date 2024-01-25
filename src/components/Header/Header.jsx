@@ -1,7 +1,6 @@
 import "./Header.scss";
 import logo from "../../assets/logo/BrainFlix-logo.svg";
 import avatarImage from "../../assets/images/Mohan-muruge.jpg";
-import uploadImg from "../../assets/icons/upload.svg";
 
 function Header() {
   return (
@@ -24,7 +23,6 @@ function Header() {
         </div>
         <div className="header__button-container">
           <button type="submit" className="header__button">
-            <img className="header__button-image" src={uploadImg}></img>
             UPLOAD
           </button>
         </div>
