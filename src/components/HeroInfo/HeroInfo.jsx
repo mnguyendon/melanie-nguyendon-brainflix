@@ -1,9 +1,9 @@
-import "./VideoInfo.scss";
+import "./HeroInfo.scss";
 import viewsIcon from "../../assets/icons/views.svg";
 import likesIcon from "../../assets/icons/likes.svg";
 import { formatTimestamp } from "../../utils/utils";
 
-function VideoInfo({ currentVideo }) {
+function HeroInfo({ currentVideo }) {
   return (
     <section className="videoInfo">
       <h1 className="videoInfo__title">{currentVideo.title}</h1>
@@ -44,4 +44,4 @@ function VideoInfo({ currentVideo }) {
   );
 }
 
-export default VideoInfo;
+export default HeroInfo;

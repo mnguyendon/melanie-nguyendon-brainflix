@@ -3,6 +3,21 @@
 @use "../../styles/partials/global";
 
 .uploads {
+  &__thumbnail {
+    position: relative;
+    background-color: $mercury;
+    height: 30svh;
+    max-width: 18rem;
+    border-radius: 0.25rem;
+    object-fit: inherit;
+    margin: 1rem;
+
+    @include tablet {
+      height: 50svh;
+      max-width: 80svh;
+    }
+  }
+
   &__title {
     padding: 1rem;
     border-top: 1px $mercury solid;

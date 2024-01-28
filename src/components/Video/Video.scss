@@ -1,0 +1,41 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/global";
+
+a {
+  text-decoration: none;
+  color: $brainflix-black;
+}
+
+.video {
+  &__container {
+    display: flex;
+    margin: 1rem;
+    background-color: $white;
+  }
+
+  &__video {
+    position: relative;
+    background-color: $mercury;
+    height: 4.5rem;
+    min-width: 8rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 4.25rem;
+    margin-left: 1rem;
+  }
+
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    min-width: 5rem;
+    color: $brainflix-black;
+  }
+}

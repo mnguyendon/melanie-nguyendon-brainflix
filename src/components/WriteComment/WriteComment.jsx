@@ -6,7 +6,7 @@ function WriteComment({ currentVideo }) {
   return (
     <section className="writeComment">
       <h2 className="writeComment__title">
-        {currentVideo.comments.length} Comments
+        {currentVideo.comments?.length} Comments
       </h2>
       <div className="writeComment__wrapper">
         <img className="writeComment__avatar" src={commentsAvatar} />

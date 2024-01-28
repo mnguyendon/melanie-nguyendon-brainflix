@@ -1,7 +1,15 @@
 import "./UploadPage.scss";
-import publishImg from "../../assets/icons/publish.svg";
+import thumbnail from "../../assets/images/Upload-video-preview.jpg";
+import { useNavigate } from "react-router-dom";
 
 function UploadPage() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    alert("Upload successful");
+    navigate("/");
+  }
+
   return (
     <>
       <section className="uploads">
@@ -11,7 +19,7 @@ function UploadPage() {
             <label className="uploads__container-label" for="userName">
               VIDEO THUMBNAIL
             </label>
-            <img className="uploads__video-thumbnail" />
+            <img src={thumbnail} className="uploads__thumbnail" />
           </div>
           <div className="uploads__container">
             <label className="uploads__container-label" for="userName">
@@ -39,7 +47,11 @@ function UploadPage() {
           </div>
 
           <div className="uploads__container uploads__container-button">
-            <button className="uploads__button" type="submit">
+            <button
+              className="uploads__button"
+              type="submit"
+              onClick={handleClick}
+            >
               PUBLISH
             </button>
             <button className="uploads__cancel-button" type="submit">

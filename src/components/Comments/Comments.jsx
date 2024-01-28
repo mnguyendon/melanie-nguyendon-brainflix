@@ -1,12 +1,10 @@
 import "./Comments.scss";
 import { formatTimestamp } from "../../utils/utils";
-import { useState } from "react";
-import videoInfoData from "../../data/video-details.json";
 
 function Comments({ currentVideo }) {
   return (
     <section className="comments">
-      {currentVideo.comments.map((comment, index) => (
+      {currentVideo.comments?.map((comment, index) => (
         <div className="comments__container" key={index}>
           <div className="comments__icon"></div>
           <div className="comments__details">
