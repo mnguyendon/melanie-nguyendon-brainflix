@@ -1,5 +1,5 @@
 import "./App.scss";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import UploadPage from "./pages/UploadPage/UploadPage";
 import HomePage from "./pages/HomePage/HomePage";

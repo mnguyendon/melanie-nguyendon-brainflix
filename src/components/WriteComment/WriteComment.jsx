@@ -1,6 +1,5 @@
 import "./WriteComment.scss";
 import commentsAvatar from "../../assets/images/Mohan-muruge.jpg";
-import { useState } from "react";
 
 function WriteComment({ currentVideo }) {
   return (
