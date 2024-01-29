@@ -3,6 +3,28 @@
 @use "../../styles/partials/global";
 
 .uploads {
+  &__form {
+    @include tablet {
+      margin: 1rem;
+    }
+  }
+
+  &__section {
+    @include desktop {
+      border-top: 1px $mercury solid;
+      padding-top: 2rem;
+      padding-right: 1rem;
+      min-width: 70%;
+    }
+  }
+
+  &__wrap {
+    @include desktop {
+      display: flex;
+      margin: 0 5rem;
+    }
+  }
+
   &__thumbnail {
     position: relative;
     background-color: $mercury;
@@ -15,6 +37,20 @@
     @include tablet {
       height: 50svh;
       max-width: 80svh;
+      margin: 0 1rem;
+
+      @include desktop {
+        height: 27svh;
+        max-width: 80svh;
+        margin: 0 1rem;
+      }
+    }
+
+    &-title {
+      @include tablet {
+        padding-top: 2rem;
+        border-top: 1px $mercury solid;
+      }
     }
   }
 
@@ -23,6 +59,17 @@
     border-top: 1px $mercury solid;
     color: $brainflix-darkblack;
     margin: 1rem 0;
+    font-size: 2rem;
+
+    @include tablet {
+      padding-top: 2rem;
+      padding-left: 2rem;
+      padding-bottom: 0;
+    }
+
+    @include desktop {
+      padding-left: 7rem;
+    }
   }
 
   &__container {
@@ -81,17 +128,31 @@
       border: 0.15rem $mercury solid;
       border-radius: 0.25rem;
     }
+
+    &-button {
+      @include tablet {
+        padding-top: 1rem;
+        border-top: 1px $mercury solid;
+        margin: 0 1rem;
+      }
+
+      @include desktop {
+        margin: 0 6rem;
+      }
+    }
   }
 
   &__cancel-button {
     border: none;
     color: $brainflix-blue;
     font-weight: bold;
+    padding: 2rem 0;
 
     @include tablet {
       position: absolute;
       top: 25%;
       right: 32%;
+      padding: 0;
     }
   }
 

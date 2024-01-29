@@ -48,16 +48,8 @@ function HomePage() {
       videoListInfo();
     } else {
       getMyFirstData();
-      // const list =  videoListInfo();
-      // console.log("video", list);
-      // heroVideoDetails(list[0].id);
-      // heroVideoDetails("84e96018-4022-434e-80bf-000ce4cd12b8");
     }
   }, [videoId]);
-
-  // const alterVideo = (videoObject) => {
-  //   setCurrentVideo(videoObject);
-  // };
 
   return (
     <>
