@@ -13,7 +13,7 @@ function HomePage() {
   const [videoData, setVideoData] = useState([]);
   const { videoId } = useParams();
 
-  const apiUrl = "https://project-2-api.herokuapp.com/videos";
+  const apiUrl = "http://localhost:5050/videos";
   const apiKey = "7e59c90a-a11c-46bd-bf15-8f4752e0391f";
 
   const videoListInfo = async () => {

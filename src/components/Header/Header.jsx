@@ -21,7 +21,11 @@ function Header() {
               placeholder="Search"
             ></input>
           </form>
-          <img src={avatarImage} className="header__avatar" />
+          <img
+            alt="user profile photo"
+            src={avatarImage}
+            className="header__avatar"
+          />
         </div>
         <div className="header__button-container">
           <Link to={`/upload`} className="header__upload-link">

@@ -23,7 +23,11 @@ function UploadPage() {
               >
                 VIDEO THUMBNAIL
               </label>
-              <img src={thumbnail} className="uploads__thumbnail" />
+              <img
+                alt="upload thumbnail"
+                src={thumbnail}
+                className="uploads__thumbnail"
+              />
             </div>
             <div className="uploads__section">
               <div className="uploads__container">

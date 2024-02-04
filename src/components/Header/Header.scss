@@ -72,6 +72,10 @@
       right: 0.5%;
       top: -0.5%;
     }
+
+    @include desktop {
+      right: 7.5%;
+    }
   }
 
   &__button {
