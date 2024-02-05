@@ -21,6 +21,10 @@ a {
     min-width: 8rem;
     border-radius: 0.5rem;
     object-fit: cover;
+
+    @include tablet {
+      width: 8rem;
+    }
   }
 
   &__info {

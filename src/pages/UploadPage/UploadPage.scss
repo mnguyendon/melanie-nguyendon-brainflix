@@ -7,6 +7,11 @@
     @include tablet {
       margin: 1rem;
     }
+
+    @include desktop {
+      margin-top: 4rem; // Adjusted margin to avoid overlapping with the navbar
+      margin-bottom: 2rem; // Adjusted margin for better spacing
+    }
   }
 
   &__section {

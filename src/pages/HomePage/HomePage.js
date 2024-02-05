@@ -37,19 +37,14 @@ function HomePage() {
     }
   };
 
-  const getMyFirstData = async () => {
-    const list = await videoListInfo();
-    heroVideoDetails(list[0].id);
-  };
-
   useEffect(() => {
+    videoListInfo();
     if (videoId) {
       heroVideoDetails(videoId);
-      videoListInfo();
     } else {
-      getMyFirstData();
+      heroVideoDetails(videoData[0]?.id);
     }
-  }, [videoId]);
+  }, [videoId, videoData]);
 
   return (
     <>
